@@ -56,9 +56,10 @@ If FFmpeg is still not found:
    ];
    ```
 
-4. Save the file, then close and reopen its panel.
+> [!TIP]
+> Use the full path to the FFmpeg executable, not its folder. Save the script and reopen the panel after changing it.
 
-Use forward slashes (`/`) and point to the executable itself, not its folder or download archive. This release checks only the listed paths; it does not search the system `PATH`. Reapply your custom entry after replacing the script with an update.
+Use forward slashes (`/`). This release checks only the listed paths, not the system `PATH`. Reapply your custom entry after an update.
 
 ## Use
 
