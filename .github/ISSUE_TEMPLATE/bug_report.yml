@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a RenderBuddy problem.
+labels: [bug]
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: Versions
+      description: RenderBuddy, Cavalry, macOS and FFmpeg versions, where relevant.
+      placeholder: RenderBuddy 0.7.0 / Cavalry 2.8.0 / macOS ... / FFmpeg ...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and settings
+      description: Include the export section, format, playback range, resolution scale and optional settings.
+      placeholder: |
+        1. Open a composition...
+        2. Choose...
+        3. Click...
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual result
+      description: What should happen, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error or encode log
+      description: Paste relevant output. Remove personal paths or private project details before sharing.
+      render: text
